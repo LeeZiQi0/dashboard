@@ -1,0 +1,34 @@
+/* App.css */
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure images don't break layout */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Custom Link Behavior for Nav Items */
+.nav-link {
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: #0f766e;
+}
+
+/* Responsive Grid Fallback */
+@media (max-width: 1024px) {
+    .main-layout-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-container {
+        padding: 1rem;
+    }
+}
